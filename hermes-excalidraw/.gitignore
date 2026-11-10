@@ -1,0 +1,10 @@
+node_modules/
+dist/
+test-build/
+test-results/
+playwright-report/
+VERIFICATION.md
+.env
+.env.*
+*.pem
+*.key

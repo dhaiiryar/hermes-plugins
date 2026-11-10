@@ -1,0 +1,2 @@
+import { defineConfig } from '@playwright/test'
+export default defineConfig({ testDir: './tests/e2e', outputDir: 'test-results/playwright', workers: 1, reporter: [['list'], ['json', { outputFile: 'test-results/browser-results.json' }]], use: { baseURL: 'http://127.0.0.1:4187', headless: true, viewport: { width: 1280, height: 900 } }, webServer: { command: 'node tests/server.mjs', url: 'http://127.0.0.1:4187', reuseExistingServer: false } })
